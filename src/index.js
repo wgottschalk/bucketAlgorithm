@@ -4,6 +4,7 @@
 * @params {number} target the desired volume of one of the buckets
 *
 * Returns the minimum number of steps needed to reach the target value
+* Or Returns "Not Possible" if target cannot be reached
 */
 
 import _ from "ramda";

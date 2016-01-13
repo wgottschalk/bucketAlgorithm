@@ -9,8 +9,8 @@
 import _ from 'ramda';
 
 const transfer = (value1, value2, bucket) => {
-		const x = Math.min(bucket[0], value2 - bucket[1]);
-		return [bucket[0] - x, bucket[1] + x];
+	const x = Math.min(bucket[0], value2 - bucket[1]);
+	return [bucket[0] - x, bucket[1] + x];
 }
 
 export default _.curry(transfer);
