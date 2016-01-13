@@ -5,7 +5,7 @@ import transfer from "../src/transfer.js";
 import getCount from "../src/getCount";
 import minBuckets from "../src/index";
 
-test("Filling function", t => {
+test("Filling function", (t) => {
 	t.plan(2);
 	let bucket = [0,0];
 	const fill3 = fill(3);
@@ -14,14 +14,14 @@ test("Filling function", t => {
 	t.deepEquals(fill3(bucket), [3,0], "The fill function can be curried");
 });
 
-test("Empty function", t => {
+test("Empty function", (t) => {
 	t.plan(1);
 	let bucket = [0,5];
 
 	t.deepEquals(empty(bucket), [0,0], "Bucket empties to [0,0]");
 });
 
-test("Transfer function", t => {
+test("Transfer function", (t) => {
 	t.plan(3);
 	let bucket = [3,0];
 	const transBig = transfer(3,5);
@@ -34,7 +34,7 @@ test("Transfer function", t => {
 	t.deepEquals(bucket, [3,0], "The updated value has not been mutated");
 });
 
-test("Bucket Algorithm Function", t => {
+test("Bucket Algorithm Function", (t) => {
 	t.plan(5);
 
 	t.equals(getCount(3,5,4), 8,
@@ -49,9 +49,9 @@ test("Bucket Algorithm Function", t => {
 		"Breaks out of loop is count isn't found");
 });
 
-test("Final Result", t => {
+test("Final Result", (t) => {
 	t.plan(3);
-	
+
 	t.equals(minBuckets(3,5,4), 6,
 		"returns minimum steps to reach volume of 4 w/ buckets size 3 and 5")
 	t.equals(minBuckets(7,4,1), 4,
