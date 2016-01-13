@@ -1,7 +1,5 @@
-/**
- * @param {Type}
- * @return {Type}
- */
-export default function () {
-  return true
+const bucket = (bucket1, bucket2, target) => {
+	return;
 }
+
+export default bucket;

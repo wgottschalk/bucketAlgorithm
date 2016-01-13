@@ -54,5 +54,8 @@
     "tap-spec": "*",
     "tape": "*",
     "watch": "*"
+  },
+  "dependencies": {
+    "ramda": "^0.19.1"
   }
 }
