@@ -1,17 +1,15 @@
 /*
 * @params {number} value bucket's max volume
-* @params {string} direction side of the filling target
 * @params {array} bucket array of two bucket's current values
 *
-* Returns a tuple representing the two bucket's updated values
+* Returns a tuple with the 1st value equal to its max capacity
 */
 
 import _ from 'ramda';
 
-const fill = (value, direction, bucket) => {
-	let copy = [].concat(bucket);
-	const index = (direction === "left") ? 0 : 1;
-	copy[index] = value;
+const fill = (value, bucket) => {
+	let copy = _.concat([], bucket);
+	copy[0] = value;
 	return copy;
 }
 
