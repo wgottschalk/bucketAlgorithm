@@ -1,4 +1,4 @@
-<big><h1 align="center">bucket</h1></big>
+<big><h1 align="center">The Water Bucket Algorithm</h1></big>
 
 <p align="center">
   <a href="https://npmjs.org/package/bucket">
@@ -32,10 +32,12 @@
   </a>
 </p>
 
-<p align="center"><big>
-
-</big></p>
-
+<p>
+ "You are standing in front of a lake with a 3 gallon bucket and a 5 gallon bucket, what is the minimum number of steps need to reach 4 gallons if at all possible?"
+</p>
+<p>
+"Now abstract that into a function for two buckets of any size and any target value between 1 and the largest bucket size"
+</p>
 
 ## Install
 
@@ -46,9 +48,10 @@ npm i -D bucket
 ## Usage
 
 ```js
-import bucket from "bucket"
+import bucketAlgorithm from "bucket"
 
-bucket() // true
+bucketAlgorithm(3,5,4) // -> 6
+bucketAlgorithm(2,8,1) // -> "Not Possible"
 ```
 
 ## License
