@@ -1,7 +1,7 @@
 <big><h1 align="center">The Water Bucket Algorithm</h1></big>
 
 <p align="center">
-  <a href="https://npmjs.org/package/bucket">
+  <a href="https://npmjs.com/package/water-bucket-algorithm">
     <img src="https://img.shields.io/npm/v/bucket.svg?style=flat-square"
          alt="NPM Version">
   </a>
@@ -26,7 +26,7 @@
          alt="Dependency Status">
   </a>
 
-  <a href="https://github.com/wgottschalk/bucket/blob/master/LICENSE">
+  <a href="https://github.com/wgottschalk/bucketAlgorithm/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/bucket.svg?style=flat-square"
          alt="License">
   </a>
@@ -49,14 +49,23 @@ npm install water-bucket-algorithm
 ```
 
 ## Usage
-
+### ES5
 ```js
-import bucketAlgorithm from "bucket"
+var bucket = require("water-bucket-algorithm").default;
+// bucket(bucketSize1, bucketSize2, target)
+
+bucket(3,5,4) // -> 6
+bucket(2,8,1) // -> "Not Possible"
+
+```
+### ES6/2015
+```js
+import bucket from "water-bucket-algorithm"
 
 // bucket(bucketSize1, bucketSize2, target)
 
-bucketAlgorithm(3,5,4) // -> 6
-bucketAlgorithm(2,8,1) // -> "Not Possible"
+bucket(3,5,4) // -> 6
+bucket(2,8,1) // -> "Not Possible"
 ```
 
 ## License

@@ -4,8 +4,7 @@
 *
 * Returns a tuple with the 1st value equal to its max capacity
 */
-
-import _ from 'ramda';
+import _ from "ramda";
 
 const fill = (value, bucket) => {
 	let copy = _.concat([], bucket);
