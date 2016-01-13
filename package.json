@@ -1,6 +1,6 @@
 {
-  "name": "bucket",
-  "version": "1.0.0",
+  "name": "water-bucket-algorithm",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "files": [

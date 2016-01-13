@@ -38,17 +38,22 @@
 <p>
 "Now abstract that into a function for two buckets of any size and any target value between 1 and the largest bucket size"
 </p>
+<p>
+Here is an implementation of that algorithm
+</p>
 
 ## Install
 
 ```sh
-npm i -D bucket
+npm install water-bucket-algorithm
 ```
 
 ## Usage
 
 ```js
 import bucketAlgorithm from "bucket"
+
+// bucket(bucketSize1, bucketSize2, target)
 
 bucketAlgorithm(3,5,4) // -> 6
 bucketAlgorithm(2,8,1) // -> "Not Possible"
